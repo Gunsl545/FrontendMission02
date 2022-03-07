@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(235, 160, 222);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(156, 0, 117);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(235, 160, 222);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(129, 7, 109);
+            height: 400px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(100, 0, 84);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head >
+
+<body style="background-color:rgb(129, 7, 109);">
+
+    <header>
+        <img src="1-removebg-preview.png">
+        <h2>Noir Cakes</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="Orden.html" target="blank">Crear pastel</a>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <FONT COLOR="white"><h1>Bienvenidos</h1>
+                <p>En Noir Cakes tenemos la experiencia mas darks que podrás encontrar en pasteles, todos y cada uno de nuestros pasteles estan dedicados a algunas de las mejores bandas
+                    de Rock, Metal, punk, etc.</p>
+            </FONT>
+
+            
+            
+            <br>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
